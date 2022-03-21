@@ -1,0 +1,12 @@
+{
+    "name": "stfkolev/chaospelt",
+    "description": "Modular, robust wordpress plugin development foundation - freeing you to create without sweating the small things",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chaospelt\\": "src/"
+        }
+    }
+}
