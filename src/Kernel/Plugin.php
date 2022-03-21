@@ -6,10 +6,12 @@ use Chaospelt\Kernel\Traits\Registerable;
 use Chaospelt\Kernel\View;
 use Chaospelt\Kernel\Facades\RegisterTypes;
 
-abstract class Plugin {
+abstract class Plugin 
+{
     use Registerable;
 
-    public function __construct($pluginFile) {
+    public function __construct($pluginFile) 
+    {
         $calledClass = get_called_class();
         
         register_activation_hook($pluginFile, $calledClass, 'activate');

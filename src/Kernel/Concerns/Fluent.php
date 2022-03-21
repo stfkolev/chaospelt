@@ -2,7 +2,8 @@
 
 namespace Chaospelt\Kernel\Concerns;
 
-interface Fluent {
+interface Fluent 
+{
     /**
      * Used to instantiate the \Registerable Trait
      * 
