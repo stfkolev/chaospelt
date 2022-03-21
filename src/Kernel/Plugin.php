@@ -49,14 +49,14 @@ abstract class Plugin
     /**
      * Used for the activation hook in Wordpress.
      * 
-     * @return none
+     * @return void
      */
     abstract static protected function activate();
 
     /**
      * Used for the deactivation hook in Wordpress.
      * 
-     * @return none
+     * @return void
      */
     abstract static protected function deactivate();
 }
