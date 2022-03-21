@@ -5,8 +5,8 @@
  * 
  * PHP version 7.4
  * 
- * @category Facades
- * @package  Chaospelt\Kernel\Facades
+ * @category Traits
+ * @package  Chaospelt\Kernel\Traits
  * @author   Stf Kolev <inkyzfx@gmail.com>
  * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  * @link     https://github.com/stfkolev/chaospelt
@@ -19,8 +19,8 @@ use ReflectionClass;
 /**
  * Trait used for often registering things around Wordpress.
  * 
- * @category Facades
- * @package  Chaospelt\Kernel\Facades
+ * @category Traits
+ * @package  Chaospelt\Kernel\Traits
  * @author   Stf Kolev <inkyzfx@gmail.com>
  * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  * @link     https://github.com/stfkolev/chaospelt
