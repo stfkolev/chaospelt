@@ -1,5 +1,10 @@
 # Chaospelt 0.1
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/stfkolev/chaospelt.svg?style=flat-square)](https://packagist.org/packages/stfkolev/chaospelt) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/stfkolev/chaospelt/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/stfkolev/chaospelt/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/stfkolev/chaospelt/badges/build.png?b=master)](https://scrutinizer-ci.com/g/stfkolev/chaospelt/build-status/master)
+[![License](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen.svg?style=flat-square)](LICENSE) 
+[![Code Coverage](https://scrutinizer-ci.com/g/stfkolev/chaospelt/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/stfkolev/chaospelt/?branch=master)
 [![StyleCI](https://github.styleci.io/repos/472332711/shield?branch=master)](https://github.styleci.io/repos/472332711?branch=master)
 
 ## Purpose
