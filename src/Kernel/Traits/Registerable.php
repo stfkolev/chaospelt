@@ -1,20 +1,50 @@
 <?php
 
+/**
+ * Trait used for often registering things around Wordpress.
+ * 
+ * PHP version 7.4
+ * 
+ * @category Facades
+ * @package  Chaospelt\Kernel\Facades
+ * @author   Stf Kolev <inkyzfx@gmail.com>
+ * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @link     https://github.com/stfkolev/chaospelt
+ */
+
 namespace Chaospelt\Kernel\Traits;
 
 use Chaospelt\Kernel\Concerns\Fluent;
 use ReflectionClass;
-
-trait Registerable 
+/**
+ * Trait used for often registering things around Wordpress.
+ * 
+ * @category Facades
+ * @package  Chaospelt\Kernel\Facades
+ * @author   Stf Kolev <inkyzfx@gmail.com>
+ * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @link     https://github.com/stfkolev/chaospelt
+ */
+trait Registerable
 {
-    public function register_hook($hook, $type, $callback) 
+    /**
+     * Used to register Wordpress hooks.
+     * 
+     * @param $hook  Used to specify the name of the hook
+     * @param $type  Used to specify the type of the hook
+     * @param $class Class that should be used for the closure
+     * 
+     * @return void
+     */
+    public function registerHook($hook, $type, $class) 
     {
-        $reflectedConcern = new \ReflectionClass($callback);
+        $reflectedConcern = new \ReflectionClass($class);
 
-        if($reflectedConcern->implementsInterface(Fluent::class)) 
-        {
+        if ($reflectedConcern->implementsInterface(Fluent::class)) {
             $fluentReflection = new ReflectionClass(Fluent::class);
-            ("add_$type")($hook, array($callback, reset($fluentReflection->getMethods())->name));
+            $firstMethod = reset($fluentReflection->getMethods());
+
+            ("add_$type")($hook, array($callback, $firstMethod->name));
         }
     }
 }
