@@ -15,8 +15,6 @@
 namespace Chaospelt\Kernel;
 
 use Chaospelt\Kernel\Traits\Registerable;
-use Chaospelt\Kernel\View;
-use Chaospelt\Kernel\Facades\RegisterTypes;
 
 /**
  * Abstract class, used as the core for the plugin development.
