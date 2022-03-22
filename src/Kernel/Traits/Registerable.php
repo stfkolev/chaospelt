@@ -6,11 +6,12 @@
  * PHP version 7.4
  *
  * @category Traits
+ * @package  Chaospelt\Kernel\Traits
  *
- * @author   Stf Kolev <inkyzfx@gmail.com>
- * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @author  Stf Kolev <inkyzfx@gmail.com>
+ * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
- * @link     https://github.com/stfkolev/chaospelt
+ * @link https://github.com/stfkolev/chaospelt
  */
 
 namespace Chaospelt\Kernel\Traits;
@@ -22,11 +23,12 @@ use ReflectionClass;
  * Trait used for often registering things around Wordpress.
  *
  * @category Traits
+ * @package  Chaospelt\Kernel\Traits
  *
- * @author   Stf Kolev <inkyzfx@gmail.com>
- * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @author  Stf Kolev <inkyzfx@gmail.com>
+ * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
- * @link     https://github.com/stfkolev/chaospelt
+ * @link https://github.com/stfkolev/chaospelt
  */
 trait Registerable
 {
