@@ -35,9 +35,9 @@ trait Registerable
     /**
      * Used to register Wordpress hooks.
      *
-     * @param $hook  Used to specify the name of the hook
-     * @param $type  Used to specify the type of the hook
-     * @param $class Class that should be used for the closure
+     * @param string $hook  Used to specify the name of the hook
+     * @param string $type  Used to specify the type of the hook
+     * @param mixed  $class Class that should be used for the closure
      *
      * @return void
      */
