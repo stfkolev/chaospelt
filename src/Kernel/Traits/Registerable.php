@@ -48,8 +48,8 @@ trait Registerable
         if ($reflectedConcern->implementsInterface(Fluent::class)) {
             $fluentReflection = new ReflectionClass(Fluent::class);
             $firstMethod = reset($fluentReflection->getMethods());
-
-            ("add_$type")($hook, [$callback, $firstMethod->name]);
+            
+            ("add_$type")($hook, [$class, $firstMethod->name]);
         }
     }
 }
