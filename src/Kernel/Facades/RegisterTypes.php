@@ -21,7 +21,7 @@ namespace Chaospelt\Kernel\Facades;
  *
  * @category Facades
  * @package  Chaospelt\Kernel\Facades
- * 
+ *
  * @author  Stf Kolev <inkyzfx@gmail.com>
  * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
