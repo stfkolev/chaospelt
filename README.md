@@ -64,7 +64,7 @@ class LabPlugin extends Plugin {
 
 ## License
 
-Firewall is licensed under the BSD 3-Clause License - see the `LICENSE` file for details
+Chaospelt is licensed under the BSD 3-Clause License - see the `LICENSE` file for details
 
 ## Contributing
 

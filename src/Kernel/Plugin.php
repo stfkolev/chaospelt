@@ -6,11 +6,12 @@
  * PHP version 7.4
  *
  * @category Facades
+ * @package  Chaospelt\Kernel\Facades
  *
- * @author   Stf Kolev <inkyzfx@gmail.com>
- * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @author  Stf Kolev <inkyzfx@gmail.com>
+ * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
- * @link     https://github.com/stfkolev/chaospelt
+ * @link https://github.com/stfkolev/chaospelt
  */
 
 namespace Chaospelt\Kernel;
@@ -23,11 +24,12 @@ use Chaospelt\Kernel\Traits\Registerable;
  * PHP version 7.4
  *
  * @category Facades
+ * @package  Chaospelt\Kernel\Facades
  *
- * @author   Stf Kolev <inkyzfx@gmail.com>
- * @license  BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
+ * @author  Stf Kolev <inkyzfx@gmail.com>
+ * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
- * @link     https://github.com/stfkolev/chaospelt
+ * @link https://github.com/stfkolev/chaospelt
  */
 abstract class Plugin
 {
