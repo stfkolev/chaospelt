@@ -18,7 +18,7 @@ namespace Chaospelt\Kernel\Contracts;
 
 /**
  * Convertible Type for Collections transformation.
- * 
+ *
  * @template TKey of array-key
  * @template TValue
  *

@@ -37,7 +37,7 @@ class BuilderInvalidCreateUsageException extends Exception
      * @param string    $message  Message of the Exception
      * @param number    $code     Code of the exception
      * @param Throwable $previous Previously thrown exception
-     * 
+     *
      * @return void
      */
     public function __construct($message = '', $code = 0, Throwable $previous = null)
@@ -51,10 +51,10 @@ class BuilderInvalidCreateUsageException extends Exception
 
     /**
      * Custom string representation of the object
-     * 
+     *
      * @return string
      */
-    public function __toString() 
+    public function __toString()
     {
         return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
     }

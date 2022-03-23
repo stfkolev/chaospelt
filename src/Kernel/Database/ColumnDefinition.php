@@ -30,7 +30,7 @@ use Chaospelt\Kernel\Support\Vivid;
  * @license BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
  *
  * @link https://github.com/stfkolev/chaospelt
- * 
+ *
  * @method $this after(string $column) Place the column "after" another column (MySQL)
  * @method $this always() Used as a modifier for generatedAs()
  * @method $this autoIncrement() Set INTEGER columns as auto-increment (primary key)
