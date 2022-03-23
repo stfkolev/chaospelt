@@ -98,10 +98,10 @@ class Blueprint
     /**
      * Create a new schema blueprint.
      *
-     * @param string        $table    
-     * @param \Closure|null $callback 
-     * @param string        $prefix  
-     *  
+     * @param string        $table
+     * @param \Closure|null $callback
+     * @param string        $prefix
+     *
      * @return void
      */
     public function __construct($table, Closure $callback = null, $prefix = '')
@@ -117,9 +117,9 @@ class Blueprint
     /**
      * Create a new string column on the table.
      *
-     * @param string   $column 
-     * @param int|null $length 
-     * 
+     * @param string   $column
+     * @param int|null $length
+     *
      * @return \Chaospelt\Kernel\Database\ColumnDefinition
      */
     public function string($column, $length = null)
@@ -136,7 +136,7 @@ class Blueprint
      * @param string $type       Column Type
      * @param string $name       Column Name
      * @param array  $parameters Column Parameters List
-     * 
+     *
      * @return \Chaospelt\Kernel\Database\ColumnDefinition
      */
     public function addColumn($type, $name, array $parameters = [])
@@ -151,8 +151,8 @@ class Blueprint
     /**
      * Add a new column definition to the blueprint.
      *
-     * @param \Chaospelt\Kernel\Database\ColumnDefinition $definition 
-     * 
+     * @param \Chaospelt\Kernel\Database\ColumnDefinition $definition
+     *
      * @return \Chaospelt\Kernel\Database\ColumnDefinition
      */
     protected function addColumnDefinition($definition)

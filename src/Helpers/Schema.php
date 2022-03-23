@@ -48,13 +48,13 @@ class Schema
     
     /**
      * Create a table
-     * 
+     *
      * @param string $tableName The name of the table to create
      * @param mixed  $callback  The function to use
-     * 
+     *
      * @return self
      */
-    public static function create($tableName, Closure $callback) 
+    public static function create($tableName, Closure $callback)
     {
         if ($callback instanceof Closure) {
             $reflectedClosure = new ReflectionFunction($callback);

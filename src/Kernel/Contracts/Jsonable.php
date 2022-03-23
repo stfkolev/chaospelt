@@ -33,7 +33,7 @@ interface Jsonable
      * Convert the object to its JSON representation.
      *
      * @param int $options Options to be used when converting the object
-     * 
+     *
      * @return string
      */
     public function toJson($options = 0);

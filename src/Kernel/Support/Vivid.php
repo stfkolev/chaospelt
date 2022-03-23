@@ -24,7 +24,7 @@ use JsonSerializable;
 
 /**
  * Articulately self-expressive type
- * 
+ *
  * @template TKey of array-key
  * @template TValue
  *
@@ -52,7 +52,7 @@ class Vivid
      * Create a new vivid instance.
      *
      * @param iterable<TKey, TValue> $attributes List of attributes to be passed
-     * 
+     *
      * @return void
      */
     public function __construct($attributes = [])
@@ -67,7 +67,7 @@ class Vivid
      *
      * @param TKey                                  $key     Key of the attribute
      * @param TGetDefault|(\Closure(): TGetDefault) $default Default key parameter
-     * 
+     *
      * @return TValue|TGetDefault
      */
     public function get($key, $default = null)
@@ -113,7 +113,7 @@ class Vivid
      * Convert the fluent instance to JSON.
      *
      * @param int $options Options available to pass onto the json serialization
-     * 
+     *
      * @return string
      */
     public function toJson($options = 0)
@@ -125,7 +125,7 @@ class Vivid
      * Determine if the given offset exists.
      *
      * @param TKey $offset Key of the attribute
-     * 
+     *
      * @return bool
      */
     public function offsetExists($offset): bool
@@ -137,7 +137,7 @@ class Vivid
      * Get the value for a given offset.
      *
      * @param TKey $offset Key of the attribute
-     * 
+     *
      * @return TValue|null
      */
     public function offsetGet($offset): mixed
@@ -150,7 +150,7 @@ class Vivid
      *
      * @param TKey   $offset Key of the attribute
      * @param TValue $value  Value of the attribute
-     * 
+     *
      * @return void
      */
     public function offsetSet($offset, $value): void
@@ -162,7 +162,7 @@ class Vivid
      * Unset the value at the given offset.
      *
      * @param TKey $offset Key of the attribute
-     * 
+     *
      * @return void
      */
     public function offsetUnset($offset): void
@@ -175,7 +175,7 @@ class Vivid
      *
      * @param TKey              $method     Method instance to be called
      * @param array{0: ?TValue} $parameters List of method arguments
-     * 
+     *
      * @return $this
      */
     public function __call($method, $parameters)
@@ -189,7 +189,7 @@ class Vivid
      * Dynamically retrieve the value of an attribute.
      *
      * @param TKey $key Key of the attribute
-     * 
+     *
      * @return TValue|null
      */
     public function __get($key)
@@ -202,7 +202,7 @@ class Vivid
      *
      * @param TKey   $key   Key of the attribute
      * @param TValue $value Value of the attribute
-     * 
+     *
      * @return void
      */
     public function __set($key, $value)
@@ -214,7 +214,7 @@ class Vivid
      * Dynamically check if an attribute is set.
      *
      * @param TKey $key Key of the attribute
-     * 
+     *
      * @return bool
      */
     public function __isset($key)
@@ -226,7 +226,7 @@ class Vivid
      * Dynamically unset an attribute.
      *
      * @param TKey $key Key of the attribute
-     * 
+     *
      * @return void
      */
     public function __unset($key)
